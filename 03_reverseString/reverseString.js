@@ -15,5 +15,10 @@ const reverseString = function (string) {
     return reversed;
 };
 
+/**
+ * Instead you could've just split the string using "" as the delimiter 
+ * and then reversed the array and rejoined it
+ */
+
 // Do not edit below this line
 module.exports = reverseString;
