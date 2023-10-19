@@ -4,12 +4,8 @@
  * @returns {boolean} - Whether the string is a palindrome or not
  */
 const palindromes = function (string) {
-    let chars = string.split("").filter(char => char.match(/[a-z\d]/i)).map(char => char.toLowerCase());
-    console.log(chars);
-    for (let i = 0; i <= Math.floor(chars.length / 2); i++) {
-        if (chars[i] !== chars[chars.length - 1 - i]) return false;
-    }
-    return true;
+    const chars = string.toLowerCase().split("").filter(c => c.match(/[a-z\d]/));
+    return chars.join("") === chars.reverse().join("");
 };
 
 // Do not edit below this line
