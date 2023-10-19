@@ -14,5 +14,11 @@ const sumAll = function (start, end) {
     return sum;
 };
 
+// A cool way to swap variables
+let min = 10, max = 2;
+if (min > max) {
+    [min, max] = [max, min];
+}
+console.log(min, max)
 // Do not edit below this line
 module.exports = sumAll;
